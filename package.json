@@ -1,0 +1,21 @@
+{
+    "name": "Avida-ED-Eco",
+    "version": "1.0.0",
+    "devDependencies": {
+	"nw": "^0.69.0",
+	"nw-builder": "^3.1.2"
+    },
+    "scripts":{
+	"dev":"nw Avida-ED-Eco/",
+	"prod":"nwbuild --platforms win32,win64,osx64,linux32,linux64 --buildDir dist/ Avida-ED-Eco/"
+    },
+    "browser": {
+	"fs": false
+    },
+    "target": "webworker",
+    "externals":{
+        "fs":    "commonjs fs",
+        "path":  "commonjs path"
+    }
+
+}

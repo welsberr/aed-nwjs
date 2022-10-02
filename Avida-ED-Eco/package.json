@@ -1,0 +1,18 @@
+{
+    "name":"Avida-ED-Eco",
+    "main2":"./testload2.html",
+    "main":"./index.html",
+    "window":{
+	"min_width":1024,
+	"min_height":768,
+	"toolbar": true
+    },
+    "browser": {
+	"fs": false
+    },
+    "target": "webworker",
+    "externals":{
+        "fs":    "commonjs fs",
+        "path":  "commonjs path"
+    }
+}
